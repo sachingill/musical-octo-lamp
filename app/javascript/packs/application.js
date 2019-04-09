@@ -7,3 +7,11 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
+import 'bootstrap/dist/css/bootstrap'
+import 'bootstrap/dist/css/bootstrap-theme'
+
+console.log('Hello World from Webpacker');
+$(function () {
+  console.log('Hello World from Webpacker');
+});

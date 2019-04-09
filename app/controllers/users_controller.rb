@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def search
+    logger.info("am I hit")
     @users = User.all
   end
 end

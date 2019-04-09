@@ -3,6 +3,7 @@
     <li><%= user %></li>
   <% end %>
 </ul>
+<%= link_to "Search User", search_users_path(@invoice), method: :post %>
 <h4>Search By user</h4>
 <% text_field_tag(:search, params[:search])%>
 <%= submit_tag ("Search") %>
