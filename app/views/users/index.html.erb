@@ -1,5 +1,14 @@
 <ul>
   <% @users.each do |user| %>
-    <li><%= user.name %></li>
+    <li><%= user %></li>
   <% end %>
 </ul>
+<h4>Search By user</h4>
+<% text_field_tag(:search, params[:search])%>
+<%= submit_tag ("Search") %>
+
+<%= form_for User.new, :url => "search" do |f| %>
+  <%= f.label :email %>
+  <%- f.text_field :email %>
+
+<%- end %>

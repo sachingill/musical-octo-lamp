@@ -4,4 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def search
+    @users = User.all
+  end
 end
